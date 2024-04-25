@@ -136,7 +136,99 @@ let result = (Number.parseFloat(num11) / Number.parseFloat(num2)).toPrecision(4)
 console.log(result);
 
 //Punto 40
-let random = Math.random(0,10);
+let random = Math.random(0,1);
+let result2 = (Math.abs(random + 5));
+console.log(result2);
+
+//Punto 41
+
+let result3 = random.toString() + 3;
+console.log(result3);
+
+//Punto 42
+
+let result4 = (Math.exp(3) + random);
+console.log(result4);
+
+//Punto 43
+
+let result5 = (Math.sqrt(num11) + Math.clz32(num4));
+console.log(result5);
+
+//Punto 44
+let x = 13;
+let y = x;
+console.log(y);
+
+//Punto 45
+
+let uno = 5;
+let dos = 10
+let result6 = uno += dos;
+console.log(uno);
+
+//Punto 46
+
+uno += dos;
+console.log(uno);
+
+//Punto 47
+
+uno -= dos;
+console.log(uno);
+
+//Punto 48
+uno*=dos;
+console.log(uno);
+
+//Punto 49
+uno/=dos;
+console.log(uno);
+
+//Punto 50
+
+uno %=dos;
+console.log(uno);
+
+//Punto 51
+
+uno**=dos;
+console.log(uno)
+
+//Punto 52
+let tres = 5
+tres++
+console.log(tres)
+
+//Punto 53
+tres--
+console.log(tres)
+
+//Punto 54
+let num15 = 5;
+let result7 = ++num15;
+
+console.log(result7);
+
+//Punto 55
+let num16 = 5;
+let result8 = --num16;
+console.log(result8)
+
+//Punto 56
+let num17 = 5;
+let result9 = -num17;
+console.log(result9);
+
+
+
+
+
+
+
+
+
+
 
 
 
