@@ -127,4 +127,8 @@ let frase2 = 'hola 20';
 console.log(frase2.match(/\d/)? `la frase ${frase2} tiene un numero `: `la frase ${frase2} NO tiene un numero`);
 
 //Punto 23
+let punto = "hola.";
+console.log(punto[punto.length - 1] === "." ? `la frase ${punto} SI termina con punto`: `la frase ${frase} NO termina con punto`);
+
+//Punto 24
 
