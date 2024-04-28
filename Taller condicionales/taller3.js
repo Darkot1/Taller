@@ -94,18 +94,22 @@ if (Math.sqrt(cuadrado) % 1 === 0){
 }else console.log(`El numero ${cuadrado} NO es cuadrado perfecto`);
 
 //Punto 16
-//----------------------------<<<<<<<<<<<<<<          >>>>>>>>>>>>>>>>>>>-------------------------------------
+//---------------------------------------------------------------------------------
 
 
 //Punto 17
 let potencia = 16;
 if(potencia > 0 &&(potencia & potencia -1)===0){
     console.log(`El numero ${potencia} es potencia de 2`);
-} else console.log(`El numero ${potencia} no es potencia de 2`);
-
+} else {console.log(`El numero ${potencia} no es potencia de 2`);
+}
 //Punto 18
-
-//----------------------------<<<<<<<<<<<<<<          >>>>>>>>>>>>>>>>>>>-------------------------------------
+let palindromo = 131;
+let cadenapali = palindromo.toString()
+if (cadenapali === cadenapali.split('').reverse().join('')) {
+    console.log(`${palindromo} es palíndromo`);
+} else {console.log(`${palindromo} no es palíndromo`);
+}
 
 //Punto 19
 let frase = 'hola JavaScript';
@@ -130,7 +134,11 @@ let punto = "hola.";
 console.log(punto[punto.length - 1] === "." ? `la frase ${punto} SI termina con punto`: `la frase ${punto} NO termina con punto`);
 
 //Punto 24
-//----------------------------<<<<<<<<<<<<<<          >>>>>>>>>>>>>>>>>>>-------------------------------------
+
+//-------------------------------------------------------------------------------------------------------------
+
+
+
 
 //Punto 25
 let laborable = "lunes";
@@ -157,7 +165,9 @@ console.log(mesNum >=1 && mesNum <= 12 ? `Es un mes valido` : `NO es un mes vali
 
 //Punto 28
 
-//----------------------------<<<<<<<<<<<<<<          >>>>>>>>>>>>>>>>>>>-------------------------------------
+let hora = 14; 
+console.log(hora >=9 && hora <=18 ?`La hora esta en el rango de 9 AM a 6 PM.`:`La hora esta fuera del rango de 9 AM a 6 PM.`)
+
 
 //Punto 29
 let edad1 = 66;
