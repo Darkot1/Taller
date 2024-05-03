@@ -94,7 +94,8 @@ if (Math.sqrt(cuadrado) % 1 === 0){
 }else console.log(`El numero ${cuadrado} NO es cuadrado perfecto`);
 
 //Punto 16
-//---------------------------------------------------------------------------------
+let su1 = 0;
+
 
 
 //Punto 17
@@ -111,7 +112,7 @@ if (cadenapali === cadenapali.split('').reverse().join('')) {
 } else {console.log(`${palindromo} no es palíndromo`);
 }
 
-//Punto 19
+/* //Punto 19
 let frase = 'hola JavaScript';
 console.log(frase.includes('JavaScript') ? 'SI tiene la frase JavaScript' : 'NO tiene la palabra JavaScript');
 
@@ -220,4 +221,4 @@ console.log(productNum1 * productNum2 >500 ? `El producto de ${productNum1} y ${
 //Punto 40
 let divNum1 = 12;
 let divNum2 = 3;
-console.log(divNum1 / divNum2 <10 ? `la division de ${divNum1} y ${divNum2} es MENOR que 10`:`La division de ${divNum1} y ${divNum2} es mayor que 10`)
+console.log(divNum1 / divNum2 <10 ? `la division de ${divNum1} y ${divNum2} es MENOR que 10`:`La division de ${divNum1} y ${divNum2} es mayor que 10`) */
