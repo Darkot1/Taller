@@ -13,13 +13,12 @@ let precios = {
     azucar:1200
 }
 
-
 //PUNTO 2
 
 while (true) {
     let producto =prompt("Ingrese un producto (o escriba 'salir' para terminar el programa: ");
      
-    if (producto.toLowerCase() === "salir") {
+    if (producto.toLowerCase() === "salir" || producto.toLowerCase() === "fin") {
         break;
     }
     listaCompras.push(producto);
@@ -49,7 +48,6 @@ while (true){
   }
 }
 
-
  //PUNTO 5
  while (true){
   let productoBorrar = prompt("Ingrese un producto para eliminar (si no desea eliminar ninguno producto ingrese 'salir')");
@@ -68,9 +66,6 @@ while (true){
 }
 
 }
-
-
-
 
 //PUNTO 6
 let total = 0;
