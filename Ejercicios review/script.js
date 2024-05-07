@@ -32,32 +32,44 @@ console.log("Su lista de compras fue:");
 listaCompras.forEach(producto => console.log(producto));
 
 //PUNTO 4
-let productoABuscar = prompt("Ingrese el producto que busca: ");
-let buscar = false;
-for (let i = 0; i < listaCompras.length; i++) {
-    if (listaCompras[i].toLowerCase() === productoABuscar.toLowerCase()) {
-      console.log(`El producto ${productoABuscar} esta en la posición ${i + 1} de la lista.`);
-      encontrado = true;
-      break; 
-    }
-    if (!buscar){
-        console.log(`El producto ${productoABuscar} no se encuntra en la lista.`)
-    }
+while (true){
+  let productoABuscar = prompt("Ingrese el producto que busca: (o ingrese 'salir' para no buscar.)");
+  if (productoABuscar.toLocaleLowerCase() === "salir"){
+    break;
+  }
+  for (let i = 0; i < listaCompras.length; i++) {
+      if (listaCompras[i].toLowerCase() === productoABuscar.toLowerCase()) {
+        console.log(`El producto ${productoABuscar} esta en la posición ${i + 1} de la lista.`);
+        encontrado = true;
+        break; 
+      }
+      else{
+          console.log(`El producto ${productoABuscar} no se encuntra en la lista.`)
+      }
+  }
 }
 
+
  //PUNTO 5
-let productoBorrar = prompt("Ingrese un producto para eliminar");
-let borar = false;
-for (let i = 0; i < listaCompras.length; i++) {
+ while (true){
+  let productoBorrar = prompt("Ingrese un producto para eliminar (si no desea eliminar ninguno producto ingrese 'salir')");
+  if (productoBorrar.toLocaleLowerCase() === "salir"){
+    break;
+  }
+  for (let i = 0; i < listaCompras.length; i++) {
     if (listaCompras[i].toLocaleLowerCase() === productoBorrar.toLocaleLowerCase()){
         listaCompras.splice(productoBorrar);
         console.log(`El producto ${productoBorrar} ha sido eliminado de la lista.`);
         borar = true;
     }
-    if (!borar){
+    else{
         console.log(`El producto ${productoBorrar} no se encuntra en la lista.`)
     }
 }
+
+}
+
+
 
 
 //PUNTO 6
